@@ -54,22 +54,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 const mypageRoutes = require('./function/mypage');
 const loginRoutes = require('./function/login');
 const processRoutes = require('./function/process');
-const communityRoutes = require('./function/community');
-const chatsRoutes = require('./function/chats');
-const commentsRoutes = require('./function/comments');
-const kakaoRoutes = require('./function/kakao_login');
-const noticeRoutes = require('./function/com_notice');
-const searchRoutes = require("./function/search");
+// const communityRoutes = require('./function/community');
+// const chatsRoutes = require('./function/chats');
+// const commentsRoutes = require('./function/comments');
+// const kakaoRoutes = require('./function/kakao_login');
+// const noticeRoutes = require('./function/com_notice');
+// const searchRoutes = require("./function/search");
 
 app.use('/', mypageRoutes);
 app.use('/', loginRoutes);
 app.use('/', processRoutes);
-app.use('/', communityRoutes);
-app.use('/', chatsRoutes);
-app.use('/', commentsRoutes);
-app.use('/', kakaoRoutes);
-app.use('/', noticeRoutes);
-app.use('/', searchRoutes);
+// app.use('/', communityRoutes);
+// app.use('/', chatsRoutes);
+// app.use('/', commentsRoutes);
+// app.use('/', kakaoRoutes);
+// app.use('/', noticeRoutes);
+// app.use('/', searchRoutes);
 
 //모든 요청은 build/index.html로
 app.get('*', (req, res) => {
