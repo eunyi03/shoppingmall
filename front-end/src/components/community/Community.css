@@ -1,0 +1,25 @@
+.CommunityAll_layout {
+  display: grid;
+  justify-content: center;
+}
+
+.CommunityTop_layout {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.SelectButtonCommunity_layout {
+  margin: 50px 0px;
+}
+
+.List_title {
+  /* text-align: left; */
+  color: #347988;
+}
+
+.PaginationCustom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}

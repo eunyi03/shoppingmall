@@ -1,0 +1,6 @@
+.LoginNotice_layout {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  height: 235px;
+}

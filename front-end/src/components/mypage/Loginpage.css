@@ -1,0 +1,88 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 1%;
+}
+
+.loginPage h1 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 58px;
+  color: #000000;
+  margin-bottom: 1.5%;
+}
+
+.btnContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBox input {
+  width: 423px;
+  height: 55px;
+  margin-bottom: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #787878;
+  padding-left: 5%;
+}
+
+.loginpageBtn,
+.signuppageBtn,
+.kakaoBtn {
+  width: 450px;
+  height: 55px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.loginpageBtn {
+  background: #17499e;
+  border: none;
+}
+
+.signuppageBtn {
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 3px solid #000000;
+}
+
+.kakaoBtn {
+  background: #fae100;
+  color: white;
+  border-style: none;
+}
+
+.signupLink,
+.kakaoLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.signupLink:hover,
+.kakaoLink:hover {
+  text-decoration: underline;
+}

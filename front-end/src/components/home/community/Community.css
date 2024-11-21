@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=IBM+Plex+Sans+KR&display=swap');
+
+.Community_all {
+  width: 420px;
+  height: 260px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1.1px solid rgb(206, 206, 206);
+  border-radius: 1.5%;
+  padding-bottom: 20px;
+}
+
+.NoticeCommunity_all {
+  width: 700px;
+  height: 245px;
+  margin-left: 20px;
+  border: 1.1px solid rgb(206, 206, 206);
+  border-radius: 1.5%;
+}
+
+.nameLink_layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Community_plusLink {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.Community_plusLink.joy {
+  color: rgb(255, 234, 0);
+}
+
+.Community_plusLink.sadness {
+  color: rgb(8, 72, 212);
+}
+
+.Community_plusLink.anxiety {
+  color: rgb(255, 145, 0);
+}
+
+.Community_plusLink.fear {
+  color: rgb(100, 18, 181);
+}
+
+.Community_title_body {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1em;
+  background-color: rgb(231, 231, 231);
+  margin: 0px 15px;
+  padding: 10px 25px 10px;
+  clip-path: inset(1% 1% 1% 1% round 10px);
+}
+
+.Community_name,
+.notice_name {
+  text-decoration: none;
+  color: black;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25em;
+  padding: 30px;
+  padding-bottom: 20px;
+}
+
+.Community_name.joy {
+  text-shadow: 6px 6px 10px rgba(255, 234, 0, 0.73);
+}
+
+.Community_name.sadness {
+  text-shadow: 6px 6px 10px rgb(8, 72, 212, 0.73);
+}
+
+.Community_name.anxiety {
+  text-shadow: 6px 6px 10px rgb(255, 145, 0, 0.73);
+}
+
+.Community_name.fear {
+  text-shadow: 6px 6px 10px rgb(100, 18, 181, 0.73);
+}
+
+.Community_title {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.Community_body_body {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.85em;
+}
+
+.Community_body {
+  color: rgb(98, 98, 98);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Community_body1:after {
+  content: '';
+  display: flex;
+  justify-content: center;
+  width: 555px;
+  border-bottom: 2.7px solid rgb(182, 182, 182);
+  margin: auto;
+  margin-top: 10px;
+}
+
+.BorderLine {
+  border-top: 2px solid #969696;
+  margin-top: 20px;
+}
+
+.notice_layout {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 144px;
+  height: 45px;
+}
+
+.notice_name {
+  padding: 0px;
+  /* margin-bottom: 20px; */
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-left: 7px;
+}

@@ -1,0 +1,67 @@
+.chattingRoom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.my-message-container {
+  align-self: flex-end;
+  background-color: #2196f3;
+  color: white;
+  max-width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0 10px;
+}
+
+.other-message-container {
+  align-self: flex-start;
+  background-color: #f2f2f2;
+  color: black;
+  max-width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 10px 0;
+}
+
+.my-message {
+  margin: 0;
+}
+
+.other-message {
+  margin: 0;
+}
+
+.msgsendItem {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputMessage {
+  align-items: center;
+  padding: 0 0;
+  margin: 0 0;
+  flex-direction: column;
+}
+
+.inputMessage input {
+  align-items: center;
+  padding: 0 0;
+  margin: 0 0;
+  width: 70%;
+  line-height: 25px;
+  padding: 2%;
+  padding-left: 4%;
+}
+
+.sendmessageBtn {
+  align-items: center;
+  padding: 0 0;
+  margin: 0 0;
+  text-align: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.footer-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 130px;
+  background: #ededed;
+  margin-top: 150px;
+}
+
+.footer-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ededed;
+}
+
+.company-name {
+  position: absolute;
+  left: 15.57%;
+  top: 19.76%;
+  bottom: 63.47%;
+  font-size: 20px;
+  line-height: 140%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #787878;
+}
+
+.company-address {
+  position: absolute;
+  left: 15.57%;
+  top: 40.12%;
+  bottom: 46.71%;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #787878;
+}

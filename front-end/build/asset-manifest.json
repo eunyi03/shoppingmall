@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c907bf7.css",
+    "main.js": "/static/js/main.9224bc22.js",
+    "static/js/453.9537af23.chunk.js": "/static/js/453.9537af23.chunk.js",
+    "static/media/hospital.png": "/static/media/hospital.324a288861b95d8f0f24.png",
+    "static/media/anxiety.png": "/static/media/anxiety.2a596b970c277f2e7091.png",
+    "static/media/fear.png": "/static/media/fear.c8815bcd870beab38ea0.png",
+    "static/media/header.png": "/static/media/header.2caff214341db9662ecb.png",
+    "static/media/sadness.png": "/static/media/sadness.88ff3b004b8753c39301.png",
+    "index.html": "/index.html",
+    "main.3c907bf7.css.map": "/static/css/main.3c907bf7.css.map",
+    "main.9224bc22.js.map": "/static/js/main.9224bc22.js.map",
+    "453.9537af23.chunk.js.map": "/static/js/453.9537af23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c907bf7.css",
+    "static/js/main.9224bc22.js"
+  ]
+}
