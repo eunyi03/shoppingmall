@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './components/Navbar.js';
-import Home from './components/home/Home.js';
+// import Home from './components/home/Home.js';
+import Deal from './components/page/Deal.js';
+import Write from './components/page/Write.js';
 import Information from './components/information/Information.js';
 import Hospital from './components/hospital/Hospital.js';
 import HospitalA from './components/hospital/HospitalA.js';
@@ -36,7 +38,8 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Deal />} />
+            <Route path="/write" element={<Write />} />
             <Route path="/information" element={<Information />} />
             <Route path="/hospital" element={<Hospital />} />
             <Route path="/hospital/HospitalA" element={<HospitalA />} />
