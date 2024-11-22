@@ -7,6 +7,12 @@ const MySQLStore = require('express-mysql-session')(session);
 const db_config = require('./config/db_config.json');
 const app = express();
 const cors = require('cors');
+app.use(
+  cors({
+    origin: "http://localhost:3000", // 프론트엔드 주소
+    credentials: true, // 쿠키 허용
+  })
+);
 
 // MySQL 세션 스토어 옵션
 const sessionStoreOptions = {
@@ -32,7 +38,7 @@ const pool = mysql.createPool({
 // URL을 인코딩하는 코드
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 app.use(
   session({
     key: 'session_cookie_name',
@@ -41,7 +47,8 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: { 
-      maxAge: 24 * 60 * 60 * 1000
+      maxAge: 24 * 60 * 60 * 1000,
+      httpOnly: true,
     }, 
   })
 );
@@ -51,9 +58,10 @@ app.use(express.static(path.join(__dirname, '../Front-end/build')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //js파일 연동
-const mypageRoutes = require('./function/mypage');
+// const mypageRoutes = require('./function/mypage');
 const loginRoutes = require('./function/login');
 const processRoutes = require('./function/process');
+const productsRoutes = require('./function/products');
 // const communityRoutes = require('./function/community');
 // const chatsRoutes = require('./function/chats');
 // const commentsRoutes = require('./function/comments');
@@ -61,9 +69,12 @@ const processRoutes = require('./function/process');
 // const noticeRoutes = require('./function/com_notice');
 // const searchRoutes = require("./function/search");
 
-app.use('/', mypageRoutes);
+// app.use('/', mypageRoutes);
 app.use('/', loginRoutes);
 app.use('/', processRoutes);
+// app.use('/', productsRoutes)
+app.use("/products", productsRoutes);
+
 // app.use('/', communityRoutes);
 // app.use('/', chatsRoutes);
 // app.use('/', commentsRoutes);
